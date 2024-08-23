@@ -70,7 +70,7 @@ class SignupForm extends Form {
 
   submit = async () => {
     if (this.disabled === true) {
-      this.validateAll()
+      // this.validateAll()
     } else {
       console.log(this.value)
 

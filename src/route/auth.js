@@ -4,7 +4,6 @@ const express = require('express')
 const router = express.Router()
 
 const { User } = require('../class/user')
-const { emit } = require('nodemon')
 
 User.create({
   email: 'test@mail.com',
