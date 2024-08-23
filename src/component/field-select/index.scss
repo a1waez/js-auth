@@ -17,6 +17,10 @@
 		transition: border-color 0.3s;
 
 		position: relative;
+
+		&:hover {
+			border-color: s.color(gray);
+		}
 	}
 
 	.field__value {
