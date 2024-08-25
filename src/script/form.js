@@ -78,16 +78,16 @@ export class Form {
     this.disabled = disabled
   }
 
-  // validateAll = () => {
-  //   Object.values(this.FIELD_NAME).forEach((name) => {
-  //     const error = this.validate(name, this.value[name])
+  validateAll = () => {
+    Object.values(this.FIELD_NAME).forEach((name) => {
+      const error = this.validate(name, this.value[name])
 
-  //     if (error) {
-  //       this.setError(name, error)
-  //       disabled = true
-  //     }
-  //   })
-  // }
+      if (error) {
+        this.setError(name, error)
+        disabled = true
+      }
+    })
+  }
 
   setAlert = (status, text) => {
     const el = document.querySelector(`.alert`)
