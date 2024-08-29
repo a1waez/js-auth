@@ -9,7 +9,8 @@ $colorMap: (
 	blue: #2f80ed,
 	background: #fff,
 	white: #fff,
-);
+	divider: #e6e6e6,
+	);
 
 @function color ($key) {
 	@return map-get($colorMap, $key);
